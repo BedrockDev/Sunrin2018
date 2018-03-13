@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.berict.application4.Test2Activity">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:text="IMAGE"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"
+        android:id="@+id/textView2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="Nathan Cho"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_alignStart="@+id/textView3"
+            android:text="Lorem ipsum hello world " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="18/03/13" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
