@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:tag="1"
+        android:layout_gravity="center"
+        android:onClick="onImageClicked"
+        android:src="@drawable/img1"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:tag="2"
+        android:layout_gravity="center"
+        android:onClick="onImageClicked"
+        android:src="@drawable/img2"/>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:tag="3"
+        android:layout_gravity="center"
+        android:onClick="onImageClicked"
+        android:src="@drawable/img3"/>
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:tag="4"
+        android:layout_gravity="center"
+        android:onClick="onImageClicked"
+        android:src="@drawable/img4"/>
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:tag="5"
+        android:layout_gravity="center"
+        android:onClick="onImageClicked"
+        android:src="@drawable/img5"/>
+
+</FrameLayout>
