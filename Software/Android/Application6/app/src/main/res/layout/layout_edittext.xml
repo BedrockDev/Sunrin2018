@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:maxLength="80"
+        android:lines="2"
+        android:hint="Maximum 80 characters"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/edittext_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/80"
+        android:layout_alignLeft="@id/edittext"
+        android:layout_below="@id/edittext"/>
+
+</RelativeLayout>

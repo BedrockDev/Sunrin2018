@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/host"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.berict.application5.FrameTabActivity">
 
-    <TabWidget
-        android:id="@android:id/tabs"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@android:id/tabcontent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tab_content1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Text1"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tab_content2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="Text2"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tab_content3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="Text3"
+                android:textSize="36sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </TabHost>

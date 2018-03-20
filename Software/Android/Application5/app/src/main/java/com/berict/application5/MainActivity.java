@@ -1,21 +1,47 @@
 package com.berict.application5;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TabHost;
 
 import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
-    int layout = R.layout.activity_frame_image;
+    int layout = R.layout.activity_frame_tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout);
+
+        if (layout == R.layout.activity_frame_tab) {
+            TabHost host = findViewById(R.id.host);
+            host.setup();
+
+            TabHost.TabSpec spec;
+            spec = host.newTabSpec("tab1");
+            spec.setIndicator("First"); // the real tab name
+            spec.setContent(R.id.tab_content1);
+
+            host.addTab(spec);
+
+            spec = host.newTabSpec("tab2");
+            spec.setIndicator("Second"); // the real tab name
+            spec.setContent(R.id.tab_content2);
+
+            host.addTab(spec);
+
+            spec = host.newTabSpec("tab3");
+            spec.setIndicator("Third"); // the real tab name
+            spec.setContent(R.id.tab_content3);
+
+            host.addTab(spec);
+        }
     }
 
     public void onImageClicked(View v) {
