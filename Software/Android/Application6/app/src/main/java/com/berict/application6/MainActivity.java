@@ -1,6 +1,7 @@
 package com.berict.application6;
 
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int layout = R.layout.layout_checkbox_radiobutton;
+    int layout = R.layout.layout_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
                     }
                 });
+                break;
+            case R.layout.layout_image:
+                BitmapDrawable bitmap = (BitmapDrawable)getResources().getDrawable(R.drawable.image);
+                ((TextView)findViewById(R.id.image_size)).setText(bitmap.getIntrinsicWidth() + " X " + bitmap.getIntrinsicHeight());
                 break;
         }
     }
