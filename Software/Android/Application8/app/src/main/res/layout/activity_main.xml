@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.berict.application8.MainActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog"
+            android:text="Dialog" />
+
+        <Button
+            android:id="@+id/button_dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog_list"
+            android:text="List dialog" />
+
+        <Button
+            android:id="@+id/button_dialog_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog_radio"
+            android:text="Radio dialog" />
+
+        <Button
+            android:id="@+id/button_dialog_datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog_datepicker"
+            android:text="DatePicker dialog" />
+
+        <Button
+            android:id="@+id/button_dialog_timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog_timepicker"
+            android:text="TimePicker dialog" />
+
+        <Button
+            android:id="@+id/button_dialog_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="dialog_custom"
+            android:text="Custom dialog" />
+
+    </LinearLayout>
+
+</RelativeLayout>
