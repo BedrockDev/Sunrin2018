@@ -359,4 +359,21 @@ Debug/
 *.vcxproj
 *.vcxproj.filters
 
+## AS custom
+
+.gradle/
+.idea/
+build/
+gradle/
+*.iml
+*.gradle
+*.properties
+gradlew
+*.bat
+build.gradle
+app/.gitignore
+libs/
+proguard-rules.pro
+mipmap-*/
+
 # End of https://www.gitignore.io/api/android,visualstudio
