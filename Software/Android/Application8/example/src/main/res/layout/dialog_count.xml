@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Select people"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <TableRow>
+
+            <TextView
+                android:text="Adult(Over 12)"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/num1"
+                android:gravity="center"
+                android:hint="Count"
+                android:inputType="number"
+                android:text="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Teen(Between 2 and 12)"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:gravity="center"
+                android:hint="Count"
+                android:inputType="number"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Child(Under 2)"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/num3"
+                android:gravity="center"
+                android:hint="Count"
+                android:inputType="number"
+                android:text="0" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
