@@ -1,8 +1,8 @@
 # Sunrin2018
-Sunrin archive of 2018, the second grade in Sunrin, by Nathan Cho
+Sunrin archive of 2018, the third grade in Sunrin, by Nathan Cho
 
 ## About the repository
-#### Archive of Sunrin Internet Highschool's software education.
+#### Archive of Sunrin Internet Highschool's education.
 
 All of contents are free to use (Some contents may have copyright on it).
 Will be updated quite frequently containing my school life.
