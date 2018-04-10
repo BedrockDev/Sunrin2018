@@ -22,40 +22,59 @@
 
         <TableRow>
 
-            <TextView android:text="Department" />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:text="Department" />
 
-            <EditText android:id="@+id/part" />
+            <EditText
+                android:id="@+id/part"
+                android:text="Web operation" />
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="ID Number" />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:text="ID Number" />
 
             <EditText
                 android:id="@+id/num"
                 android:inputType="number"
-                android:maxLength="5" />
+                android:maxLength="5"
+                android:text="2034" />
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Name" />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:text="Name" />
 
-            <EditText android:id="@+id/name" />
+            <EditText
+                android:id="@+id/name"
+                android:text="John Smith" />
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Phone" />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:text="Phone" />
 
-            <EditText android:id="@+id/phone" />
+            <EditText
+                android:id="@+id/phone"
+                android:text="+8210-1232-1234" />
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Address" />
+            <TextView
+                android:layout_marginRight="8dp"
+                android:text="Address" />
 
-            <EditText android:id="@+id/address" />
+            <EditText
+                android:id="@+id/address"
+                android:text="Seoul" />
         </TableRow>
 
     </TableLayout>
