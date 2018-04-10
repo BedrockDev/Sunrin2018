@@ -59,13 +59,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal">
+            android:gravity="right"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/button_insert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Insert" />
+                android:text="Insert example" />
+
+            <Button
+                android:id="@+id/button_insert_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insert custom" />
 
             <Button
                 android:id="@+id/button_find"
