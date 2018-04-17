@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Message notification">
+        <SwitchPreference
+            android:key="message"
+            android:title="Message notification" />
+
+        <PreferenceScreen
+            android:key="keyword_screen"
+            android:summary="Disabled"
+            android:title="Keyword alert">
+
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="keyword"
+                android:summary="Certain keywords will notify overriding existing settings"
+                android:title="Keyword alert" />
+
+            <ListPreference
+                android:dependency="keyword"
+                android:entries="@array/sounds"
+                android:entryValues="@array/sounds"
+                android:key="keyword_sound_list"
+                android:summary="Helium"
+                android:title="Keyword alert sound" />
+        </PreferenceScreen>
+
+        <SwitchPreference
+            android:key="sound"
+            android:title="Sound" />
+
+        <ListPreference
+            android:entries="@array/sounds"
+            android:entryValues="@array/sounds"
+            android:key="sound_list"
+            android:summary="Helium"
+            android:title="Alert sound" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

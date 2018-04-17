@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sounds">
+        <item>Helium</item>
+        <item>Oxygen</item>
+        <item>Hydrogen</item>
+        <item>Nitrogen</item>
+    </string-array>
+</resources>
