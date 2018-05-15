@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -35,14 +33,15 @@ public class DriveAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        if (convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = inflater.inflate(layoutId, null);
 
-        convertView = inflater.inflate(layoutId, null);
+            DriveHolder holder = new DriveHolder(convertView);
+            convertView.setTag(holder);
+        }
 
-        ImageView type = convertView.findViewById(R.id.type_image);
-        ImageView menu = convertView.findViewById(R.id.item_menu);
-        TextView title = convertView.findViewById(R.id.item_title);
-        TextView lastEdited = convertView.findViewById(R.id.item_date);
+        DriveHolder holder = (DriveHolder) convertView.getTag();
 
         String typeImage = data.get(position).type;
         int typeImageRes = 0;
@@ -59,16 +58,16 @@ public class DriveAdapter extends ArrayAdapter {
                 break;
         }
 
-        type.setImageDrawable(ResourcesCompat.getDrawable(
+        holder.type.setImageDrawable(ResourcesCompat.getDrawable(
                 context.getResources(),
                 typeImageRes,
                 null
         ));
 
-        title.setText(data.get(position).title);
-        lastEdited.setText(data.get(position).date);
+        holder.title.setText(data.get(position).title);
+        holder.lastEdited.setText(data.get(position).date);
 
-        menu.setOnClickListener(new View.OnClickListener() {
+        holder.menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(
