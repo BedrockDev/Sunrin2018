@@ -1,0 +1,23 @@
+<html>
+<script language="javascript">
+    function changeFace() {
+        document.getElementById("face").src="face_angry.png";
+        window.sample.showToast("test message");
+        window.sample.clickOnFace();
+    }
+    function alert_click() {
+        alert("alert");
+    }
+    function confirm_click() {
+        confirm("confirm");
+    }
+
+</script>
+<body>
+<img id="face" src="face_normal.png" onclick="javascript:changeFace()"/>
+<br/>
+<h3>Test</h3>
+<button id="alert" onclick="alert_click()">Alert</button>
+<button id="confirm" onclick="confirm_click()">Confirm</button>
+</body>
+</html>
