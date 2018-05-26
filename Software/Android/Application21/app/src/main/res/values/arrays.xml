@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_array">
+        <item>Mandarin</item>
+        <item>Spanish</item>
+        <item>English</item>
+        <item>Hind</item>
+        <item>Arabic</item>
+        <item>Portuguese</item>
+        <item>Bengali</item>
+        <item>Russian</item>
+        <item>Japanese</item>
+        <item>Punjabi</item>
+        <item>German</item>
+        <item>Javanese</item>
+        <item>Wu</item>
+        <item>Malay</item>
+        <item>Telugu</item>
+        <item>Vietnamese</item>
+        <item>Korean</item>
+    </string-array>
+
+    <string-array name="auto_array">
+        <item>Bobbie Palmer</item>
+        <item>Adrienne Rowe</item>
+        <item>Bertha Lamb</item>
+        <item>Bryan Patton</item>
+        <item>Manuel Roberson</item>
+        <item>Rolando Stone</item>
+        <item>Heidi Simpson</item>
+        <item>Everett Little</item>
+        <item>Alfonso Watts</item>
+        <item>Julia Mccormick</item>
+        <item>Nadine Saunders</item>
+        <item>Brendan Hodges</item>
+        <item>Paul Romero</item>
+        <item>Bridget Phillips</item>
+        <item>Dean May</item>
+        <item>Susie Peters</item>
+        <item>Jodi Montgomery</item>
+        <item>Sammy Salazar</item>
+        <item>Jose Hoffman</item>
+        <item>Tammy Carroll</item>
+        <item>Dianna Morrison</item>
+        <item>Christina Francis</item>
+        <item>Mathew Santos</item>
+        <item>Barry Manning</item>
+        <item>Dexter Clarke</item>
+        <item>Reginald Jensen</item>
+        <item>Kim Tate</item>
+        <item>Flora Curry</item>
+        <item>Justin Thomas</item>
+        <item>Benny Young</item>
+        <item>Oliver Sanchez</item>
+        <item>Wilbur Steele</item>
+        <item>Ignacio Shaw</item>
+        <item>Debra Walters</item>
+        <item>Michelle Cook</item>
+        <item>Lucas Mcguire</item>
+        <item>Joshua Martinez</item>
+        <item>Lawrence Porter</item>
+        <item>Virgil Gibbs</item>
+        <item>Seth Webster</item>
+        <item>June Parker</item>
+        <item>Louis Aguilar</item>
+        <item>Pearl Love</item>
+        <item>Noel Marshall</item>
+        <item>Milton Hubbard</item>
+        <item>Phyllis Medina</item>
+        <item>Sam Duncan</item>
+        <item>Emilio Jordan</item>
+        <item>Lula Holland</item>
+        <item>Jessie Sullivan</item>
+        <item>Yvette Powers</item>
+        <item>Beverly Carpenter</item>
+        <item>Fernando Miller</item>
+        <item>Maxine Bowen</item>
+        <item>Leon Reid</item>
+        <item>Colin Hardy</item>
+        <item>Sheryl Coleman</item>
+        <item>Bruce Quinn</item>
+        <item>Jody Newman</item>
+        <item>Hazel Graham</item>
+        <item>Roger Freeman</item>
+        <item>Kendra Valdez</item>
+        <item>Jared Gordon</item>
+        <item>Douglas Goodwin</item>
+        <item>Claire Cross</item>
+        <item>Roberto Ryan</item>
+        <item>John Beck</item>
+        <item>Genevieve Jennings</item>
+        <item>Sheri Bennett</item>
+        <item>Vickie Hopkins</item>
+        <item>Roy Jenkins</item>
+        <item>Craig Rhodes</item>
+        <item>Stuart Moran</item>
+        <item>Cesar Cummings</item>
+        <item>Darrin Maldonado</item>
+        <item>Joan Wallace</item>
+        <item>Clara Matthews</item>
+        <item>Charlene Foster</item>
+        <item>Laurence Day</item>
+        <item>Donald Stanley</item>
+        <item>Christie Crawford</item>
+        <item>Carolyn Henderson</item>
+        <item>Dawn Townsend</item>
+        <item>Erick Hughes</item>
+        <item>Evan Bates</item>
+        <item>Cecelia Peterson</item>
+        <item>Darren Schmidt</item>
+        <item>Sean Weber</item>
+        <item>Lora Craig</item>
+        <item>Jason Powell</item>
+        <item>Madeline Holt</item>
+        <item>Steve Becker</item>
+        <item>Bennie Bryant</item>
+        <item>Franklin Hamilton</item>
+        <item>Raul Moreno</item>
+        <item>Leroy Rose</item>
+        <item>Max Robbins</item>
+        <item>Jacob Kelly</item>
+        <item>Kristopher Carlson</item>
+        <item>Mandy Burns</item>
+    </string-array>
+</resources>

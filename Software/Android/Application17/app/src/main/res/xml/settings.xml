@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Cellular data">
+        <SwitchPreference
+            android:key="roaming"
+            android:summary="Connect to cellular while roaming"
+            android:title="Data roaming" />
+
+        <ListPreference
+            android:entries="@array/default_network"
+            android:entryValues="@array/default_network"
+            android:key="network"
+            android:summary="LTE"
+            android:title="Default network" />
+
+        <PreferenceScreen
+            android:key="apn"
+            android:title="APN">
+
+            <PreferenceScreen android:title="3G_INTERNET" />
+
+            <PreferenceScreen android:title="LTE_INTERNET" />
+
+            <PreferenceScreen android:title="4G_INTERNET" />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="provider"
+            android:summary="Select ISP"
+            android:title="Network provider">
+
+            <intent
+                android:targetClass="com.berict.application17.SubActivity"
+                android:targetPackage="com.berict.application17" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
