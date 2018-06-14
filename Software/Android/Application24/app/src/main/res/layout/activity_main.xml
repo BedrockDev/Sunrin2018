@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent contacts" />
+
+    <Button
+        android:id="@+id/btn_camera_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent camera photo" />
+
+    <Button
+        android:id="@+id/btn_camera_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent camera file" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent gallery" />
+
+    <Button
+        android:id="@+id/btn_speech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent speech recognition" />
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent map" />
+
+    <Button
+        android:id="@+id/btn_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent browser" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent call" />
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+</LinearLayout>
