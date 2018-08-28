@@ -11,6 +11,9 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import static android.view.View.MeasureSpec.AT_MOST;
+import static android.view.View.MeasureSpec.EXACTLY;
+
 public class CountView extends View {
 
     Context context;
@@ -22,20 +25,50 @@ public class CountView extends View {
 
     public CountView(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public CountView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context);
     }
 
-    void init() {
+    void init(Context context) {
+        this.context = context;
+
         plusBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.plus);
         minusBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.minus);
 
         plusRectDst = new Rect(10, 10, 210, 210);
         minusRectDst = new Rect(400, 10, 610, 210);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int wMode = MeasureSpec.getMode(widthMeasureSpec);
+        int hMode = MeasureSpec.getMode(heightMeasureSpec);
+
+        int wSize = MeasureSpec.getSize(widthMeasureSpec);
+        int hSize = MeasureSpec.getSize(heightMeasureSpec);
+
+        int width = 0;
+        int height = 0;
+
+        if (wMode == AT_MOST) {
+            width = 600;
+        } else if (widthMeasureSpec == EXACTLY) {
+            width = wSize;
+        }
+
+        if (hMode == AT_MOST) {
+            height = 300;
+        } else if (heightMeasureSpec == EXACTLY) {
+            height = hSize;
+        }
+
+        setMeasuredDimension(width, height);
     }
 
     @Override
