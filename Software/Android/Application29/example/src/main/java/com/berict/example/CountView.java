@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 import static android.view.View.MeasureSpec.AT_MOST;
@@ -22,6 +23,8 @@ public class CountView extends View {
 
     Bitmap plusBitmap, minusBitmap;
     Rect plusRectDst, minusRectDst;
+
+    OnCountChangedListener listener;
 
     public CountView(Context context) {
         super(context);
@@ -71,16 +74,40 @@ public class CountView extends View {
         setMeasuredDimension(width, height);
     }
 
+    void setOnCountChangedListener(OnCountChangedListener listener) {
+        this.listener = listener;
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         Rect plusRectSrc = new Rect(0, 0, plusBitmap.getWidth(), plusBitmap.getHeight());
         Rect minusRectSrc = new Rect(0, 0, minusBitmap.getWidth(), minusBitmap.getHeight());
-        
+
         Paint paint = new Paint();
         paint.setColor(Color.RED);
         paint.setTextSize(80);
         canvas.drawBitmap(plusBitmap, plusRectSrc, plusRectDst, null);
         canvas.drawText(String.valueOf(value), 260, 150, paint);
         canvas.drawBitmap(minusBitmap, minusRectSrc, minusRectDst, null);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        int x = (int) event.getX();
+        int y = (int) event.getY();
+
+        if (plusRectDst.contains(x, y) && event.getAction() == MotionEvent.ACTION_DOWN) {
+            value++;
+            listener.onChange(value);
+            invalidate();
+            return true;
+        } else if (minusRectDst.contains(x, y) && event.getAction() == MotionEvent.ACTION_DOWN) {
+            value--;
+            listener.onChange(value);
+            invalidate();
+            return true;
+        }
+
+        return false;
     }
 }
